@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Modern_JAVA_In_Action" />
+        <module name="Modern-Java-In-Action" />
       </profile>
     </annotationProcessing>
   </component>
