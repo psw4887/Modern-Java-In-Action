@@ -17,7 +17,7 @@ public class LambdaExpression {
 
         // TODO 2: 실행 어라운드 패턴
         log.trace(le.processFile());
-
+        log.trace(le.processFile(BufferedReader::readLine));
 
 
     }
@@ -35,6 +35,9 @@ public class LambdaExpression {
 
     private String processFile(BufferReaderProcessor b) throws IOException {
 
+        try(BufferedReader bf = new BufferedReader(new FileReader("data.txt"))) {
+            return b.process(bf);
+        }
     }
 }
 
